@@ -1,12 +1,12 @@
-import './App.css';
+import React from 'react';
+import Sidebar from './Components/Sidebar';
 import Header from './Components/Header'
 
 function App() {
   return (
     <div className="App">
-      <h1>hello clever programmers</h1>
       <Header/>
-      {/* feed */}
+      <Sidebar/>
       {/* widgets */}
 
     </div>
