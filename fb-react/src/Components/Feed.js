@@ -1,6 +1,7 @@
 import React from 'react'
 import StoryReel from './StoryReel';
 import MessageSender from './MessageSender';
+import Post from './Post'
 
 
 
@@ -9,18 +10,15 @@ const Feed = () => {
         <div className ='feed'>
         <StoryReel/>
         <MessageSender/>
-        
-        {/* {
-            postsData.map(entry => (
-                <Post
-                profilePic= {entry.avatar}
-                message= {entry.text}
-                timestamp = {entry.timestamp}
-                imgName = {entry.imgName}
-                username= {entry.user}
-                />
-            ))
-        } */}
+        <Post
+            profilePic= 'https://picsum.photos/200'
+            message= 'This is a message'
+            timestamp = '1601493943737'
+            imgName = 'imageName'
+            username= 'Baha'
+        />
+            
+         
         </div>
     )
 }
